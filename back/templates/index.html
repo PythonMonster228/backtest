@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Добро пожаловать в наш интернет-магазин</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'firstapp/css/style.css' %}">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>kupigru</h1>
+        <p>Горячие новинки и игры на любой вкус</p>
+        <marquee class = "stroka"><a href="https://t.me/+cuXWP0Dgr0NiOWE6">Подписывайся на наш телеграм канал!</marquee>
+      </div>
+    </header>
+
+    <section class="features">
+      <h2>Наши предложения ниже:</h2>
+      <p class="feature-furniture"><a href="https://steam.kupikod.com/ru-ru/games">Игры по самым низким ценам</a></p>
+      <p class="feature-lighting"><a href="https://steam.kupikod.com">Пополнение баланса steam</a></p>
+      <p class="feature-accessories"><a href="http://127.0.0.1:8000/list/">Cписок игр</a></p>
+    </section>
+
+    <section class="advantages">
+      <h2>Что выделяет нас среди конкурентов?</h2>
+      <ul class="advantages-list">
+        <li class="advantages-item">Весь процесс проходит под вашим надзором</li>
+        <li class="advantages-item">Выполняем всё быстро и качественно</li>
+        <li class="advantages-item">Можем вернуть деньги если возникли проблемы</li>
+      </ul>
+    </section>
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2023 Интернет-магазин. Все права защищены.</p>
+      </div>
+    </footer>
+  </body>
+</html>

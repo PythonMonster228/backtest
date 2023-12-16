@@ -1,0 +1,10 @@
+{% block title %}Игра №{{ data.game.id }}{% endblock %}
+
+{% block content %}
+    <div>Название: {{ data.game.name }}</div>
+        <div>Разработчик: {{ data.game.production }}</div>
+            <div>Издатель: {{ data.game.distributor }}</div>
+                <div>Жанр: {{ data.game.genre }}</div>
+                    <div>Цена: {{ data.game.price }}</div>
+                        <div>Дата выхода: {{ data.game.publication_data }}</div>
+{% endblock %}

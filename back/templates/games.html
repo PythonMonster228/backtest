@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+  <head>
+      <meta charset="utf-8">
+      <title>Список игр</title>
+      {% load static %}
+      <link rel="stylesheet" type="text/css" href="{% static 'firstapp/css/listStyle.css' %}">
+  </head>
+    <body>
+        <header class="site-header">
+            <div class="container">
+                <h1>kupigru</h1>
+                <p class = "spisok">Список игр для покупки</p>
+            </div>
+        </header>
+        <ul>
+            {% for game in data.games %}
+                <li><a href="{% url 'game_url' game.id %}">{{ game.name }}</a></li>
+            {% empty %}
+                <li>Список пуст</li>
+            {% endfor %}
+        </ul>
+  </body>
+</html>
